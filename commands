@@ -1,0 +1,28 @@
+- Go to the folder where the terraform configurations files are saved
+- Initialize the terraform directory by run this below command:
+
+
+
+rm -rf .terraform/
+terraform init
+terraform init -upgrade
+terraform init -reconfigure
+terraform validate
+terraform plan -var-file=variables.tfvars
+terraform apply -var-file=variables.tfvars --auto-approve
+********
+terraform state list
+terraform state pull
+terraform destroy -var-file=variables.tfvar
+terraform destroy -var-file=variables.tfvars --auto-approve
+
+*********
+terraform fmt
+***********
+cat ~/.aws/credentials
+chmod 400 mykey.pem # permission of pem key
+*********
+kubectl 
+**
+aws eks update-kubeconfig - name <your-cluster-name> - region <your-region>
+kubectl get nodes
